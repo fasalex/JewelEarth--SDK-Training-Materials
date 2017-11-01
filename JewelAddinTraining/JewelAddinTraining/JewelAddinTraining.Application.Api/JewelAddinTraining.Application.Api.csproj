@@ -16,6 +16,7 @@
     <!-- The node JsSdkPath must contain the path, with trailing back-slash, to the SDK root folder of the targeted SDK. 
          It will be used to call the plugin signing tool. -->
     <JsSdkPath>C:\Program Files\Baker Hughes\JewelEarth SDK 2017.4\</JsSdkPath>
+    <ProjectGuid>{4F9B7B83-ABAC-49EF-8CDF-BC225E5AA542}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,10 +48,15 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Joa.JewelEarth.Framework, Version=2017.4.627.0, Culture=neutral, PublicKeyToken=25ad4b03c9133d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\Joa.JewelEarth.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\CreatePolylineSetCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

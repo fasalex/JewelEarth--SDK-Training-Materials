@@ -1,4 +1,7 @@
 ﻿
+using JewelAddinTraining.Application.Api.Commands;
+using JewelAddinTraining.Application.Logic.Handlers;
+using Joa.JewelEarth.Infrastructure.CommandProcessing;
 using Joa.JewelEarth.Infrastructure.Startup.Abstractions;
 
 namespace JewelAddinTraining.Application.Logic
@@ -7,7 +10,10 @@ namespace JewelAddinTraining.Application.Logic
     {
         public void Configuration(IAppBuilder builder)
         {
-
+            builder.UseServiceRegistration(x =>
+                                           {
+                                               x.Register<ICommandHandler<CreatePolylineSetCommand>, CreatePolylineSetCommandHandler>();
+                                           });
         }
     }
 }
