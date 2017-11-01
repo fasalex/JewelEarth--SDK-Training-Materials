@@ -1,2 +1,5 @@
 /JewelAddinTraining/.vs/JewelAddinTraining/v14/.suo
-/JewelAddinTraining/JewelAddinTraining.sln.DotSettings.user
+/JewelAddinTraining/*.user
+/JewelAddinTraining/JewelAddinTraining/*/obj/*
+/JewelAddinTraining/JewelAddinTraining/*/bin/Debug/
+/JewelAddinTraining/JewelAddinTraining/*/*.user

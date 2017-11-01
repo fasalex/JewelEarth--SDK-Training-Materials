@@ -15,6 +15,7 @@
     <!-- The node JsSdkPath must contain the path, with trailing back-slash, to the SDK root folder of the targeted SDK. 
          It will be used to call the plugin signing tool. -->
     <JsSdkPath>C:\Program Files\Baker Hughes\JewelEarth SDK 2017.4\</JsSdkPath>
+    <ProjectGuid>{BED5DD77-A45C-4F9C-8D06-D1E694046CB3}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -50,6 +51,10 @@
   <ItemGroup>
     <Reference Include="Joa.JewelEarth.Framework">
       <HintPath>$(JsExePath)Joa.JewelEarth.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Joa.JewelEarth.UI.JewelExplorer, Version=2017.4.627.0, Culture=neutral, PublicKeyToken=25ad4b03c9133d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\Joa.JewelEarth.UI.JewelExplorer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

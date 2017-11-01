@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Layout>
   <Strip>
+    <MainStrip id="Strip.JewelAddinTraining" text="Kochi Addin">
+      <SubStrip id="Strip.JewelAddinTraining.Actions" text="Demo Actions">
+        <ButtonGroup>
+          <Action id="JewelAddinTraining.UI.Windows.Logic.Actions.CreatePolylineSetAction"/>
+        </ButtonGroup>
+      </SubStrip>
+    </MainStrip>
   </Strip>
 </Layout>
