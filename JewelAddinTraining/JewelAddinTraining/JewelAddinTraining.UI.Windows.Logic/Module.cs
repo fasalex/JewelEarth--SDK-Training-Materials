@@ -14,17 +14,27 @@ namespace JewelAddinTraining.UI.Windows.Logic
     {
         public void Configuration(IAppBuilder builder)
         {
-            builder.UseFormsRegistration(x => {
-                                             {
-                                                 x.Map("Default-Route-Prefix", m =>
-                                                                               {
-                                                                                   m.Route("CreateNewView-Default-Route-Prefix")
-                                                                                    .ViewModel<CreateNewViewViewModel>()
-                                                                                    .View<CreateNewViewView>()
-                                                                                    .Controller<IDocumentViewRoutingController>();
-                                                                               });
-                                             } });
-            builder.UseActionRegistration(x => x.Register<CreateNewViewAction>());
+            builder.UseFormsRegistration(x =>
+                                         {
+                                             x.Map("Default-Route-Prefix", m =>
+                                                                           {
+                                                                               m.Route("CreateCustomObject-Default-Route-Prefix")
+                                                                                .ViewModel<CreateCustomObjectViewModel>()
+                                                                                .View<CreateCustomObjectView>();
+                                                                           });
+                                         });
+            builder.UseFormsRegistration(x =>
+            {
+                {
+                    x.Map("Default-Route-Prefix", m =>
+                                                  {
+                                                      m.Route("CreateNewView-Default-Route-Prefix")
+                                                       .ViewModel<CreateNewViewViewModel>()
+                                                       .View<CreateNewViewView>()
+                                                       .Controller<IDocumentViewRoutingController>();
+                                                  });
+                }
+            });
             builder.UseFormsRegistration(x =>
                                          {
                                              x.Map("Default-Route-Prefix", m =>
@@ -37,6 +47,8 @@ namespace JewelAddinTraining.UI.Windows.Logic
             builder.UseActionRegistration(x =>
                                           {
                                               x.Register<CreatePolylineSetAction>();
+                                              x.Register<CreateCustomObjectAction>();
+                                              x.Register<CreateNewViewAction>();
                                           });
             builder.UsePluginLayoutDefinitionRegistration(x => { x.Register(@"JewelAddinTraining.UI.Windows.Logic.Plugin.pldf", typeof(Resources)); });
         }

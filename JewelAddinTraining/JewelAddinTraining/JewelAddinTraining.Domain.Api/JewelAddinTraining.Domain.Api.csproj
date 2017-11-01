@@ -54,10 +54,17 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Joa.JewelEarth.Framework, Version=2017.4.627.0, Culture=neutral, PublicKeyToken=25ad4b03c9133d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\Joa.JewelEarth.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\ICustomDomainObject.cs" />
+    <Compile Include="Items\ICustomDomainObjectContainer.cs" />
+    <Compile Include="Items\ICustomDomainObjectQueryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

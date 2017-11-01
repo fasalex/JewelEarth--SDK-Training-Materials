@@ -1,0 +1,11 @@
+﻿<OperationView
+    xmlns="http://bakerhughes.com/schemas/2017/jewelearth/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:m="clr-namespace:JewelAddinTraining.UI.Windows.Logic.ViewModels"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="JewelAddinTraining.UI.Windows.Logic.Views.CreateCustomObjectView"
+    d:DataContext="{d:DesignInstance {x:Type m:CreateCustomObjectViewModel}}"
+    mc:Ignorable="d">
+    
+</OperationView>

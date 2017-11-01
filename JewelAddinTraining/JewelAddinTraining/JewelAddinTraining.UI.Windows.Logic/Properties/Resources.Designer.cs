@@ -61,6 +61,15 @@ namespace JewelAddinTraining.UI.Windows.Logic.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Custom Object.
+        /// </summary>
+        internal static string CreateCustomObject {
+            get {
+                return ResourceManager.GetString("CreateCustomObject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create PolylineSet.
         /// </summary>
         internal static string CreatePolylineSet {

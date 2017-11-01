@@ -89,6 +89,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\CreateCustomDomainObjectCommandHandler.cs" />
     <Compile Include="Handlers\CreatePolylineSetCommandHandler.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

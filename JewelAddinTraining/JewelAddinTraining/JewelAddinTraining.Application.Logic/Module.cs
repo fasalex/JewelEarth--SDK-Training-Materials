@@ -1,4 +1,5 @@
 ﻿
+using InfrastructureDemo.Application.Logic.Handlers;
 using JewelAddinTraining.Application.Api.Commands;
 using JewelAddinTraining.Application.Logic.Handlers;
 using Joa.JewelEarth.Infrastructure.CommandProcessing;
@@ -13,6 +14,7 @@ namespace JewelAddinTraining.Application.Logic
             builder.UseServiceRegistration(x =>
                                            {
                                                x.Register<ICommandHandler<CreatePolylineSetCommand>, CreatePolylineSetCommandHandler>();
+                                               x.Register<ICommandHandler<CreateCustomDomainObjectCommand>, CreateCustomDomainObjectCommandHandler>();
                                            });
         }
     }

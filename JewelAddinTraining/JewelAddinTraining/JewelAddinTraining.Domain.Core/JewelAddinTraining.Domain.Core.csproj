@@ -15,6 +15,7 @@
     <!-- The node JsSdkPath must contain the path, with trailing back-slash, to the SDK root folder of the targeted SDK. 
          It will be used to call the plugin signing tool. -->
     <JsSdkPath>C:\Program Files\Baker Hughes\JewelEarth SDK 2017.4\</JsSdkPath>
+    <ProjectGuid>{9DE66C8A-4BD9-439E-9A41-DA821EA5692C}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -54,6 +55,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\CustomDomainObject.cs" />
+    <Compile Include="Items\CustomDomainObjectContainer.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

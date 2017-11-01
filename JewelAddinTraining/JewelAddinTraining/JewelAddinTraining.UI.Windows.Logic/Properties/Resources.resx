@@ -123,4 +123,7 @@
   <data name="NewView" xml:space="preserve">
     <value>New View</value>
   </data>
+  <data name="CreateCustomObject" xml:space="preserve">
+    <value>Create Custom Object</value>
+  </data>
 </root>
