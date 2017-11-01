@@ -3,6 +3,7 @@ using Joa.JewelEarth.Infrastructure.Startup.Abstractions;
 using Joa.JewelEarth.UI.Framework.Infrastructure;
 using JewelAddinTraining.UI.Windows.Logic.Properties;
 using JewelAddinTraining.UI.Windows.Logic.Actions;
+using JewelAddinTraining.UI.Windows.Logic.ContextMenus;
 using JewelAddinTraining.UI.Windows.Logic.ViewModels;
 using JewelAddinTraining.UI.Windows.Logic.Views;
 using Joa.JewelEarth.UI.Forms.Routing;
@@ -49,6 +50,7 @@ namespace JewelAddinTraining.UI.Windows.Logic
                                               x.Register<CreatePolylineSetAction>();
                                               x.Register<CreateCustomObjectAction>();
                                               x.Register<CreateNewViewAction>();
+                                              x.Register<CustomDomainObjectContextMenuAction>();
                                           });
             builder.UsePluginLayoutDefinitionRegistration(x => { x.Register(@"JewelAddinTraining.UI.Windows.Logic.Plugin.pldf", typeof(Resources)); });
         }

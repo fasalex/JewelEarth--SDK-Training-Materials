@@ -11,4 +11,15 @@
       </SubStrip>
     </MainStrip>
   </Strip>
+  <ContextMenus>
+    <ContextMenu id="JewelAddinTraining.Domain.Core.Items.CustomDomainObjectContainer">
+      <ContextItem id ="joaJewelLogicUI.ContextMenus.Other.NameItemAll"/>
+      <ContextItem id="joaJewelLogicUI.ContextMenus.Other.DeleteItemAction"/>
+    </ContextMenu>
+    <ContextMenu id="JewelAddinTraining.Domain.Core.Items.CustomDomainObject">
+      <ContextItem id ="joaJewelLogicUI.ContextMenus.Other.NameItemAll"/>
+      <ContextItem id="JewelAddinTraining.UI.Windows.Logic.ContextMenus.CustomDomainObjectContextMenuAction"/>
+      <ContextItem id="joaJewelLogicUI.ContextMenus.Other.DeleteItemAction"/>
+    </ContextMenu>
+  </ContextMenus>
 </Layout>
