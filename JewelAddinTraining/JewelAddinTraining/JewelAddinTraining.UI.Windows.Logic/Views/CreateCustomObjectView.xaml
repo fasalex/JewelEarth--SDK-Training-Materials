@@ -12,5 +12,9 @@
             <Label>Name</Label>
             <TextBox Text="{Binding Name}"/>
         </OperationGroup>
+        <OperationGroup>
+            <Label Content="Custom Objects" />
+            <ComboBox ItemsSource="{Binding CustomDomainObjects}" />
+        </OperationGroup>
     </OperationPanel>
 </OperationView>

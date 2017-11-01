@@ -16,6 +16,7 @@
     <!-- The node JsSdkPath must contain the path, with trailing back-slash, to the SDK root folder of the targeted SDK. 
          It will be used to call the plugin signing tool. -->
     <JsSdkPath>C:\Program Files\Baker Hughes\JewelEarth SDK 2017.4\</JsSdkPath>
+    <ProjectGuid>{B308192D-C788-4F69-B0DE-A873ED0B8CAF}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <NuGetPackageImportStamp>306eae3c</NuGetPackageImportStamp>
@@ -58,6 +59,10 @@
     <Reference Include="Joa.JewelEarth.Framework">
       <HintPath>$(JsExePath)Joa.JewelEarth.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="Joa.JewelEarth.Infrastructure.Application, Version=2017.4.627.0, Culture=neutral, PublicKeyToken=25ad4b03c9133d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\Joa.JewelEarth.Infrastructure.Application.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
@@ -78,6 +83,7 @@
   <ItemGroup>
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CustomDomainObjectService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
