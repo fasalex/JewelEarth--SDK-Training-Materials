@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <!-- The node JsAppName should contain JewelSuite or the name of your JewelApp. 
+         This node is used in a test condition and will be used to create the name of your JewelApp executable (fi. MyJewelApp.exe) -->
+    <JsAppName>JewelSuite</JsAppName>
+    <!-- The node can be empty for a JewelSuite JewelAddin, but should contain the path of your JewelAPP, but only
+         when this Addin is marked as startup project. -->
+    <JsJewelAppPath>__TEMPLATE_VAR__JsJewelAppPath__</JsJewelAppPath>
+    <!-- The node JsProductName should contain the 'ProductName' of JewelSuite or your JewelApp, because this node will be used
+         to determine to which folder this Addin must be copied after compilation. -->
+    <JsProductName>JewelSuite 2017.4 Subsurface Modeling</JsProductName>
+    <!-- The node JsExePath must contain the path, with trailing back-slash, to the JewelSuite folder. -->
+    <JsExePath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\</JsExePath>
+    <!-- The node JsSdkPath must contain the path, with trailing back-slash, to the SDK root folder of the targeted SDK. 
+         It will be used to call the plugin signing tool. -->
+    <JsSdkPath>C:\Program Files\Baker Hughes\JewelEarth SDK 2017.4\</JsSdkPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuGetPackageImportStamp>f6764f2f</NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{8AAAFA2C-F48E-46DF-B1B3-51D37D8C2E4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JewelAddinTraining.Domain.Api</RootNamespace>
+    <AssemblyName>JewelAddinTraining.Domain.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\..\..\..\bin\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\..\bin\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <MyDocs>$([System.Environment]::GetFolderPath(SpecialFolder.MyDocuments))</MyDocs>
+    <JsMyDocs>
+      $(MyDocs)\$(JsProductName)\Plugins
+    </JsMyDocs>
+  </PropertyGroup>
+  <Target Name="AfterBuild">
+    <Error Condition="'$(JsSdkPath)' == ''" Text="JsSdkPath property in the .csproj file is empty, so signing this plug-in might fail." />
+    <Error Condition="'$(JsExePath)' == ''" Text="JsExePath property in the .csproj file is empty, so you might miss external resources." />
+    <Error Condition="'$(JsAppName)' == ''" Text="JsAppName property in the .csproj file is empty, so you might not be able to start JewelSuite or your JewelApp." />
+    <Error Condition="'$(JsProductName)' == ''" Text="JsProductName property in the .csproj file is empty, so this plug-in might not be copied to the 'Plugins' folder." />
+    <Exec Command="&quot;$(JsSdkPath)pluginutil.exe&quot; &quot;/a:$(TargetDir)$(TargetFileName)&quot; &quot;/c:$(TargetDir)$(TargetName).pidf&quot;" WorkingDirectory="$(ProjectDir)" />
+    <Copy Condition="'$(JsDeployMyDocs)' != 'false'" SourceFiles="$(TargetPath)" DestinationFolder="$(JsMyDocs)" />
+    <Copy Condition="'$(JsDeployMyDocs)' != 'false'" SourceFiles="$(TargetDir)\$(TargetName).pidf" DestinationFolder="$(JsMyDocs)" />
+  </Target>
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{6455AF8B-6269-4E53-89A3-DCC326E8F941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.JewelSuite.Addin", "JewelAddinTraining\JewelAddinTraining.JewelSuite.Addin\JewelAddinTraining.JewelSuite.Addin.csproj", "{8377F9EC-64DA-4BB0-AA77-A58B9DD8156E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{CCD6FF30-0A43-4427-812F-5D126E2AFBA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{D66205A6-313F-4835-B2FB-3FD2673725B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.Application.Api", "JewelAddinTraining\JewelAddinTraining.Application.Api\JewelAddinTraining.Application.Api.csproj", "{4F9B7B83-ABAC-49EF-8CDF-BC225E5AA542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.Application.Core", "JewelAddinTraining\JewelAddinTraining.Application.Core\JewelAddinTraining.Application.Core.csproj", "{B308192D-C788-4F69-B0DE-A873ED0B8CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.Application.Logic", "JewelAddinTraining\JewelAddinTraining.Application.Logic\JewelAddinTraining.Application.Logic.csproj", "{0A28E323-BA4A-40F1-A96E-B850071F3BCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{1DFA90E7-94BE-4AE9-92B8-C5B984FAD43E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.Domain.Api", "JewelAddinTraining\JewelAddinTraining.Domain.Api\JewelAddinTraining.Domain.Api.csproj", "{8AAAFA2C-F48E-46DF-B1B3-51D37D8C2E4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.Domain.Core", "JewelAddinTraining\JewelAddinTraining.Domain.Core\JewelAddinTraining.Domain.Core.csproj", "{9DE66C8A-4BD9-439E-9A41-DA821EA5692C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.Domain.Logic", "JewelAddinTraining\JewelAddinTraining.Domain.Logic\JewelAddinTraining.Domain.Logic.csproj", "{92DB8D40-DE55-4E56-801B-5C292EBBB78D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{42160DDD-879B-48A2-B589-A72072D90F85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.UI.Windows.Core", "JewelAddinTraining\JewelAddinTraining.UI.Windows.Core\JewelAddinTraining.UI.Windows.Core.csproj", "{BED5DD77-A45C-4F9C-8D06-D1E694046CB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelAddinTraining.UI.Windows.Logic", "JewelAddinTraining\JewelAddinTraining.UI.Windows.Logic\JewelAddinTraining.UI.Windows.Logic.csproj", "{FC6100F0-041C-4169-B8E9-8DD0CB9CE499}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8377F9EC-64DA-4BB0-AA77-A58B9DD8156E}.Debug|x64.ActiveCfg = Debug|x64
+		{8377F9EC-64DA-4BB0-AA77-A58B9DD8156E}.Debug|x64.Build.0 = Debug|x64
+		{8377F9EC-64DA-4BB0-AA77-A58B9DD8156E}.Release|x64.ActiveCfg = Release|x64
+		{8377F9EC-64DA-4BB0-AA77-A58B9DD8156E}.Release|x64.Build.0 = Release|x64
+		{4F9B7B83-ABAC-49EF-8CDF-BC225E5AA542}.Debug|x64.ActiveCfg = Debug|x64
+		{4F9B7B83-ABAC-49EF-8CDF-BC225E5AA542}.Debug|x64.Build.0 = Debug|x64
+		{4F9B7B83-ABAC-49EF-8CDF-BC225E5AA542}.Release|x64.ActiveCfg = Release|x64
+		{4F9B7B83-ABAC-49EF-8CDF-BC225E5AA542}.Release|x64.Build.0 = Release|x64
+		{B308192D-C788-4F69-B0DE-A873ED0B8CAF}.Debug|x64.ActiveCfg = Debug|x64
+		{B308192D-C788-4F69-B0DE-A873ED0B8CAF}.Debug|x64.Build.0 = Debug|x64
+		{B308192D-C788-4F69-B0DE-A873ED0B8CAF}.Release|x64.ActiveCfg = Release|x64
+		{B308192D-C788-4F69-B0DE-A873ED0B8CAF}.Release|x64.Build.0 = Release|x64
+		{0A28E323-BA4A-40F1-A96E-B850071F3BCD}.Debug|x64.ActiveCfg = Debug|x64
+		{0A28E323-BA4A-40F1-A96E-B850071F3BCD}.Debug|x64.Build.0 = Debug|x64
+		{0A28E323-BA4A-40F1-A96E-B850071F3BCD}.Release|x64.ActiveCfg = Release|x64
+		{0A28E323-BA4A-40F1-A96E-B850071F3BCD}.Release|x64.Build.0 = Release|x64
+		{8AAAFA2C-F48E-46DF-B1B3-51D37D8C2E4F}.Debug|x64.ActiveCfg = Debug|x64
+		{8AAAFA2C-F48E-46DF-B1B3-51D37D8C2E4F}.Debug|x64.Build.0 = Debug|x64
+		{8AAAFA2C-F48E-46DF-B1B3-51D37D8C2E4F}.Release|x64.ActiveCfg = Release|x64
+		{8AAAFA2C-F48E-46DF-B1B3-51D37D8C2E4F}.Release|x64.Build.0 = Release|x64
+		{9DE66C8A-4BD9-439E-9A41-DA821EA5692C}.Debug|x64.ActiveCfg = Debug|x64
+		{9DE66C8A-4BD9-439E-9A41-DA821EA5692C}.Debug|x64.Build.0 = Debug|x64
+		{9DE66C8A-4BD9-439E-9A41-DA821EA5692C}.Release|x64.ActiveCfg = Release|x64
+		{9DE66C8A-4BD9-439E-9A41-DA821EA5692C}.Release|x64.Build.0 = Release|x64
+		{92DB8D40-DE55-4E56-801B-5C292EBBB78D}.Debug|x64.ActiveCfg = Debug|x64
+		{92DB8D40-DE55-4E56-801B-5C292EBBB78D}.Debug|x64.Build.0 = Debug|x64
+		{92DB8D40-DE55-4E56-801B-5C292EBBB78D}.Release|x64.ActiveCfg = Release|x64
+		{92DB8D40-DE55-4E56-801B-5C292EBBB78D}.Release|x64.Build.0 = Release|x64
+		{BED5DD77-A45C-4F9C-8D06-D1E694046CB3}.Debug|x64.ActiveCfg = Debug|x64
+		{BED5DD77-A45C-4F9C-8D06-D1E694046CB3}.Debug|x64.Build.0 = Debug|x64
+		{BED5DD77-A45C-4F9C-8D06-D1E694046CB3}.Release|x64.ActiveCfg = Release|x64
+		{BED5DD77-A45C-4F9C-8D06-D1E694046CB3}.Release|x64.Build.0 = Release|x64
+		{FC6100F0-041C-4169-B8E9-8DD0CB9CE499}.Debug|x64.ActiveCfg = Debug|x64
+		{FC6100F0-041C-4169-B8E9-8DD0CB9CE499}.Debug|x64.Build.0 = Debug|x64
+		{FC6100F0-041C-4169-B8E9-8DD0CB9CE499}.Release|x64.ActiveCfg = Release|x64
+		{FC6100F0-041C-4169-B8E9-8DD0CB9CE499}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8377F9EC-64DA-4BB0-AA77-A58B9DD8156E} = {6455AF8B-6269-4E53-89A3-DCC326E8F941}
+		{D66205A6-313F-4835-B2FB-3FD2673725B3} = {CCD6FF30-0A43-4427-812F-5D126E2AFBA8}
+		{4F9B7B83-ABAC-49EF-8CDF-BC225E5AA542} = {D66205A6-313F-4835-B2FB-3FD2673725B3}
+		{B308192D-C788-4F69-B0DE-A873ED0B8CAF} = {D66205A6-313F-4835-B2FB-3FD2673725B3}
+		{0A28E323-BA4A-40F1-A96E-B850071F3BCD} = {D66205A6-313F-4835-B2FB-3FD2673725B3}
+		{1DFA90E7-94BE-4AE9-92B8-C5B984FAD43E} = {CCD6FF30-0A43-4427-812F-5D126E2AFBA8}
+		{8AAAFA2C-F48E-46DF-B1B3-51D37D8C2E4F} = {1DFA90E7-94BE-4AE9-92B8-C5B984FAD43E}
+		{9DE66C8A-4BD9-439E-9A41-DA821EA5692C} = {1DFA90E7-94BE-4AE9-92B8-C5B984FAD43E}
+		{92DB8D40-DE55-4E56-801B-5C292EBBB78D} = {1DFA90E7-94BE-4AE9-92B8-C5B984FAD43E}
+		{42160DDD-879B-48A2-B589-A72072D90F85} = {CCD6FF30-0A43-4427-812F-5D126E2AFBA8}
+		{BED5DD77-A45C-4F9C-8D06-D1E694046CB3} = {42160DDD-879B-48A2-B589-A72072D90F85}
+		{FC6100F0-041C-4169-B8E9-8DD0CB9CE499} = {42160DDD-879B-48A2-B589-A72072D90F85}
+	EndGlobalSection
+EndGlobal
