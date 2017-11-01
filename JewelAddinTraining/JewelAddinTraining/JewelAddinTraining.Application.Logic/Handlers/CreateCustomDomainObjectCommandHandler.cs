@@ -17,7 +17,6 @@ namespace InfrastructureDemo.Application.Logic.Handlers
         {
             var customDomainObject = new CustomDomainObject {Name = command.Name};
             m_customDomainObjectContainer.Add(customDomainObject);
-
         }
     }
 }

@@ -63,6 +63,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CustomDomainObjectController.cs" />
+    <Compile Include="CustomObjectIcons.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,6 +78,10 @@
     <ProjectReference Include="..\JewelAddinTraining.Domain.Core\JewelAddinTraining.Domain.Core.csproj">
       <Name>JewelAddinTraining.Domain.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\CustomDomainObject.png" />
+    <EmbeddedResource Include="Images\CustomDomainObjectContainer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

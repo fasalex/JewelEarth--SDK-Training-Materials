@@ -7,5 +7,10 @@
     x:Class="JewelAddinTraining.UI.Windows.Logic.Views.CreateCustomObjectView"
     d:DataContext="{d:DesignInstance {x:Type m:CreateCustomObjectViewModel}}"
     mc:Ignorable="d">
-    
+    <OperationPanel>
+        <OperationGroup>
+            <Label>Name</Label>
+            <TextBox Text="{Binding Name}"/>
+        </OperationGroup>
+    </OperationPanel>
 </OperationView>

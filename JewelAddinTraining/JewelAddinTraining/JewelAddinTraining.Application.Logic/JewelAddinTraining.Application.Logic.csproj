@@ -67,6 +67,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\Joa.JewelEarth.ReservoirBasicObjects.dll</HintPath>
     </Reference>
+    <Reference Include="Joa.JewelEarth.UI.JewelExplorer, Version=2017.4.627.0, Culture=neutral, PublicKeyToken=25ad4b03c9133d92, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\Joa.JewelEarth.UI.JewelExplorer.dll</HintPath>
+    </Reference>
     <Reference Include="Joa.JewelEarth.UnitSystem, Version=2017.4.627.0, Culture=neutral, PublicKeyToken=25ad4b03c9133d92, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Baker Hughes\JewelSuite 2017.4 Subsurface Modeling\JewelSuite\Joa.JewelEarth.UnitSystem.dll</HintPath>

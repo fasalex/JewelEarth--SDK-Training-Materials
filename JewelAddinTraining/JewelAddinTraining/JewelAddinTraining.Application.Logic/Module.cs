@@ -16,6 +16,9 @@ namespace JewelAddinTraining.Application.Logic
                                                x.Register<ICommandHandler<CreatePolylineSetCommand>, CreatePolylineSetCommandHandler>();
                                                x.Register<ICommandHandler<CreateCustomDomainObjectCommand>, CreateCustomDomainObjectCommandHandler>();
                                            });
+
+            
         }
     }
+
 }
