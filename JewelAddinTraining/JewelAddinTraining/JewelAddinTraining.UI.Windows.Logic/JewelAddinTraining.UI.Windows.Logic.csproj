@@ -101,6 +101,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\CreateNewViewAction.cs" />
     <Compile Include="Actions\CreatePolylineSetAction.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,7 +110,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\CreateNewViewViewModel.cs" />
     <Compile Include="ViewModels\CreatePolylineSetViewModel.cs" />
+    <Compile Include="Views\CreateNewViewView.xaml.cs">
+      <DependentUpon>CreateNewViewView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CreatePolylineSetView.xaml.cs">
       <DependentUpon>CreatePolylineSetView.xaml</DependentUpon>
     </Compile>
@@ -123,6 +128,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +143,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\CreateNewViewView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\CreatePolylineSetView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -144,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Actions\Images\CreatePolylineSetAction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Actions\Images\CreateNewViewAction.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

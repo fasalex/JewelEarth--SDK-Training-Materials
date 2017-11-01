@@ -68,5 +68,14 @@ namespace JewelAddinTraining.UI.Windows.Logic.Properties {
                 return ResourceManager.GetString("CreatePolylineSet", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New View.
+        /// </summary>
+        internal static string NewView {
+            get {
+                return ResourceManager.GetString("NewView", resourceCulture);
+            }
+        }
     }
 }

@@ -5,6 +5,7 @@ using JewelAddinTraining.UI.Windows.Logic.Properties;
 using JewelAddinTraining.UI.Windows.Logic.Actions;
 using JewelAddinTraining.UI.Windows.Logic.ViewModels;
 using JewelAddinTraining.UI.Windows.Logic.Views;
+using Joa.JewelEarth.UI.Forms.Routing;
 using Joa.JewelEarth.UI.Forms.Startup;
 
 namespace JewelAddinTraining.UI.Windows.Logic
@@ -13,6 +14,17 @@ namespace JewelAddinTraining.UI.Windows.Logic
     {
         public void Configuration(IAppBuilder builder)
         {
+            builder.UseFormsRegistration(x => {
+                                             {
+                                                 x.Map("Default-Route-Prefix", m =>
+                                                                               {
+                                                                                   m.Route("CreateNewView-Default-Route-Prefix")
+                                                                                    .ViewModel<CreateNewViewViewModel>()
+                                                                                    .View<CreateNewViewView>()
+                                                                                    .Controller<IDocumentViewRoutingController>();
+                                                                               });
+                                             } });
+            builder.UseActionRegistration(x => x.Register<CreateNewViewAction>());
             builder.UseFormsRegistration(x =>
                                          {
                                              x.Map("Default-Route-Prefix", m =>

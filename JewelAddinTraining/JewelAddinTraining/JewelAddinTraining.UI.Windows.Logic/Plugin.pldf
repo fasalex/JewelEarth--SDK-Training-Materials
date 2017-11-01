@@ -5,6 +5,7 @@
       <SubStrip id="Strip.JewelAddinTraining.Actions" text="Demo Actions">
         <ButtonGroup>
           <Action id="JewelAddinTraining.UI.Windows.Logic.Actions.CreatePolylineSetAction"/>
+          <Action id="JewelAddinTraining.UI.Windows.Logic.Actions.CreateNewViewAction"/>
         </ButtonGroup>
       </SubStrip>
     </MainStrip>

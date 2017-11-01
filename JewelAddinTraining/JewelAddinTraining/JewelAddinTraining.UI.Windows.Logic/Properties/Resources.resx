@@ -120,4 +120,7 @@
   <data name="CreatePolylineSet" xml:space="preserve">
     <value>Create PolylineSet</value>
   </data>
+  <data name="NewView" xml:space="preserve">
+    <value>New View</value>
+  </data>
 </root>
